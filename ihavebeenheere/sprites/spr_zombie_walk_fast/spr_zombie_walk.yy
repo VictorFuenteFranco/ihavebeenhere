@@ -92,7 +92,7 @@
     "eventStubScript": null,
     "parent": {"name":"spr_zombie_walk","path":"sprites/spr_zombie_walk/spr_zombie_walk.yy",},
     "resourceVersion": "1.3",
-    "name": "spr_zombie_walk",
+    "name": "",
     "tags": [],
     "resourceType": "GMSequence",
   },

@@ -1,3 +1,6 @@
+///Estado inicial
+var estado_inicial = estado;
+
 /// Control de estadios
 distancia = point_distance(x,y,Player_man.x,Player_man.y);
 es_visible = !collision_line(x,y,Player_man.x,Player_man.y,obj_pared,false,false);
@@ -15,7 +18,12 @@ if(es_atacable){
 	src_z = zombie_movimiento;
 }
 
+///Reinicio de estado
+if(estado != estado_inicial) image_index = 0;
+
+///Ejecutamos scripts
 script_execute(src_z);
+
 ///Colisiones con paredes
 vh = lengthdir_x(v,dir);
 vv = lengthdir_y(v,dir);

@@ -32,12 +32,22 @@ if(place_meeting(x,y+vv,obj_pared)){
 	vv=0;
 }
 
+///Colisiones contra ataques zombie
+repeat(instance_number(obj_ataque_zombie)){
+	ataque_z = instance_place(x,y,obj_ataque_zombie);
+	if(ataque_z){
+		with(ataque_z){
+			instance_destroy();
+		}
+		alarm[0]=room_speed/4;
+	}
+}
+
 ///Asignando variables finales
 hspeed = vh;
 vspeed = vv;
 
 ///Control de estados
-
 if(estado!=estados.jugador_disparar){
 	if(vh!=0 || vv!=0) estado=estados.jugador_movimiento; src=jugador_movimiento;
 	if(vh==0 && vv==0) estado=estados.jugador_parado;	src=jugador_parado;
