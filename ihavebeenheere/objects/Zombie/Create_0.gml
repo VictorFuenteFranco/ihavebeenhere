@@ -5,6 +5,9 @@ v = 0;
 radio_persecucion = 200;
 radio_ataque = 55;
 perseguir = true;
+//vida zombie
+vida_base=50;
+vida=vida_base;
 
 ///Estados 
 enum estadoz{

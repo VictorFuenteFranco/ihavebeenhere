@@ -6,7 +6,13 @@ if(object_exists(Player_man)){
 	}
 }
 
-//Colision con paredes
+///Colision con paredes
 if(collision_line(x,y,x+hspeed,y+vspeed,obj_pared,false,false)){
 	instance_destroy();
+}
+
+/// Detectar colision zombie
+if(collision_line(x,y,x+hspeed,y+vspeed,Zombie,false,false)){
+	instance_destroy();
+	Zombie.vida-=poder;	
 }

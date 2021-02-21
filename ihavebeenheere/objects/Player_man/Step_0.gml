@@ -36,16 +36,11 @@ if(place_meeting(x,y+vv,obj_pared)){
 repeat(instance_number(obj_ataque_zombie)){
 	ataque_z = instance_place(x,y,obj_ataque_zombie);
 	if(ataque_z){
-		with(ataque_z){
-			instance_destroy();
-		}
-		alarm[0]=room_speed/4;
+		with(ataque_z){instance_destroy();}
+		alarm[0]=room_speed/4
+		vida -= poder_zombie;
 	}
 }
-
-///Asignando variables finales
-hspeed = vh;
-vspeed = vv;
 
 ///Control de estados
 if(estado!=estados.jugador_disparar){
@@ -56,6 +51,14 @@ if(estado!=estados.jugador_disparar){
 ///Control de ejecucion de scripts(por estado)
 script_execute(src);
 
+///Asignando variables finales
+hspeed = vh;
+vspeed = vv;
 
+/// Colorear de rojo
+if(alarm[0]>-1){image_blend = c_red;} else {image_blend = c_white;}
+
+///Reinicio del juego si nos mata
+if(vida<=0){room_restart();}
 
 

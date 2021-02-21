@@ -57,6 +57,16 @@ if(colision){
 		alarm[0] = room_speed*random_range(1,2);
 	}
 }
+
+
 /// Movimiento final del Zombie
 speed = v;
 direction = dir;
+
+///Colorear de rojo oscuro
+var rojo_oscuro = make_color_rgb(155,017,030);
+if(alarm[1]>-1){image_blend=rojo_oscuro;}else{image_blend=c_white;}
+
+
+///Comprobar si muere el zombie
+if(vida<=0){instance_destroy();}

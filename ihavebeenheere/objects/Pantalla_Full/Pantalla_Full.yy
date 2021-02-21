@@ -1,12 +1,9 @@
 {
-  "spriteId": {
-    "name": "spr_ataque_zombie",
-    "path": "sprites/spr_ataque_zombie/spr_ataque_zombie.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
-  "persistent": false,
+  "persistent": true,
   "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
@@ -20,15 +17,17 @@
   "physicsStartAwake": true,
   "physicsKinematic": false,
   "physicsShapePoints": [],
-  "eventList": [],
+  "eventList": [
+    {"isDnD":false,"eventNum":70,"eventType":9,"collisionObjectId":null,"parent":{"name":"Pantalla_Full","path":"objects/Pantalla_Full/Pantalla_Full.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+  ],
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Enemies",
-    "path": "folders/Objetos/Enemies.yy",
+    "name": "Objetos",
+    "path": "folders/Objetos.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_ataque_zombie",
+  "name": "Pantalla_Full",
   "tags": [],
   "resourceType": "GMObject",
 }

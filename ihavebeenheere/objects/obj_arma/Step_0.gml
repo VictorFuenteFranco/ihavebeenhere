@@ -7,7 +7,7 @@ if (instance_exists(Player_man)){
 
 //Detectar disparos y creacion
 if(mouse_check_button_pressed(mb_left) && Player_man.estado!=estados.jugador_disparar){
-	bala = instance_create_layer(x,y,"instances",obj_bala);
+	bala = instance_create_layer(x,y,"Instances",obj_bala);
 	bala.direction = Player_man.dir;
 	bala.speed = 10;
 	
@@ -15,5 +15,6 @@ if(mouse_check_button_pressed(mb_left) && Player_man.estado!=estados.jugador_dis
 	Player_man.estado = estados.jugador_disparar;
 	//Establecemos script a ejecutar
 	Player_man.src = jugador_disparar;
+	
 }
 
