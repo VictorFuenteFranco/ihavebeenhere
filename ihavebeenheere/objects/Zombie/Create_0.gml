@@ -15,5 +15,6 @@ enum estadoz{
 	zombie_persecucion,
 	zombie_atacar
 }
+
 estado=estadoz.zombie_movimiento;
 src_z = zombie_movimiento;
