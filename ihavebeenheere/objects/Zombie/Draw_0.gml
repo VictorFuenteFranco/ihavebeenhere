@@ -3,4 +3,4 @@
 //draw_circle(x,y,radio_persecucion,true);
 //draw_circle(x,y,radio_ataque,true);
 draw_sprite_ext(sprite_index,image_index,x,y,1,1,dir,image_blend,image_alpha);
-draw_text(x,y+40,string(vida));
+if(vida>0){draw_text(x,y+40,string(vida));}

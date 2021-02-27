@@ -1,0 +1,1 @@
+if(keyboard_check(ord("R"))){obj_arma.balas=recarga; instance_destroy();}

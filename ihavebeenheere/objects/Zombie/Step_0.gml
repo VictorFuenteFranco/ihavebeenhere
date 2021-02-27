@@ -69,4 +69,7 @@ if(alarm[1]>-1){image_blend=rojo_oscuro;}else{image_blend=c_white;}
 
 
 ///Comprobar si muere el zombie
-if(vida<=0){instance_destroy();}
+if(vida<=0){
+	estado=estadoz.zombie_muerto; 
+	script_execute(zombie_muerto); 
+} 

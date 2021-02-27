@@ -1,0 +1,1 @@
+vida=Player_man.vida_base;

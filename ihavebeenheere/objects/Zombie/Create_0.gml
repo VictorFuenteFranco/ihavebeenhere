@@ -13,7 +13,8 @@ vida=vida_base;
 enum estadoz{
 	zombie_movimiento,
 	zombie_persecucion,
-	zombie_atacar
+	zombie_atacar,
+	zombie_muerto
 }
 
 estado=estadoz.zombie_movimiento;

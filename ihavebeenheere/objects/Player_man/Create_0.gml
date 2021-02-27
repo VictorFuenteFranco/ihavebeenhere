@@ -2,7 +2,7 @@
 vida_base=150;
 vida = vida_base;
 v = 4; //velocidad
-poder_zombie = 5; 
+poder_zombie = 5;
 
 ///Estados del jugador
 enum estados{
@@ -16,4 +16,4 @@ src=jugador_parado;
 
 ///	Creamos los objetos del jugador
 instance_create_layer(0,0,"Player",obj_arma);
-instance_create_layer(0,0,"Player",obj_mirilla);
+instance_create_depth(0,0,-99,obj_mirilla);
