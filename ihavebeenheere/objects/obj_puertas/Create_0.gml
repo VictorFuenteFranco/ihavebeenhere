@@ -1,1 +1,2 @@
 open=false;
+colision=false;
