@@ -44,8 +44,8 @@ repeat(instance_number(obj_ataque_zombie)){
 
 ///Control de estados
 if(estado!=estados.jugador_disparar){
-	if(vh!=0 || vv!=0) estado=estados.jugador_movimiento; src=jugador_movimiento;
-	if(vh==0 && vv==0) estado=estados.jugador_parado;	src=jugador_parado;
+	if(vh!=0 || vv!=0){estado=estados.jugador_movimiento;src=jugador_movimiento;}
+	if(vh==0 && vv==0){estado=estados.jugador_parado;src=jugador_parado;}
 }
 
 ///Control de ejecucion de scripts(por estado)

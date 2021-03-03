@@ -64,7 +64,7 @@ speed = v;
 direction = dir;
 
 ///Colorear de rojo oscuro
-var rojo_oscuro = make_color_rgb(155,017,030);
+rojo_oscuro = make_color_rgb(155,017,030);
 if(alarm[1]>-1){image_blend=rojo_oscuro;}else{image_blend=c_white;}
 
 
