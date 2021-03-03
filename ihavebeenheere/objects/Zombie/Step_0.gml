@@ -49,6 +49,26 @@ if(place_meeting(x,y+vv,obj_pared)){
 	colision=true;
 }
 
+if(place_meeting(x+vh,y,obj_puertas)){
+	
+	for(var i=0;i<abs(vh);i++){
+		if(place_meeting(x+sign(vh),y,obj_puertas)){
+			break;
+		}
+		x += sign(vh);
+	}
+	colision=true;
+}
+if(place_meeting(x,y+vv,obj_puertas)){
+	for(var i=0;i<abs(vv);i++){
+		if(place_meeting(x,y+sign(vv),obj_puertas)){
+			break;
+		}
+		y += sign(vv);
+	}
+	colision=true;
+}
+
 //Cuando detecte colision
 if(colision){
 	dir= direction + irandom_range(135,270);

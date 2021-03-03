@@ -9,7 +9,7 @@ if(colision){
 	if(open==true){sprite_index=cr_none;}
 
 //Si NO hay colision y la apuerta esta abierta
-}else if(!colision){
+/*}else if(!colision){
 	if(open==false){sprite_index=spr_puertas_idle;}
 	if(open==true){image_speed=1;sprite_index=spr_puertas_close; if(image_index==6){image_speed=0;open=false;}}
-}
+*/}

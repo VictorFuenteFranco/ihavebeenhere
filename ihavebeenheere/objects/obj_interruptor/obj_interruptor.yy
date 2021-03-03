@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "sprite2",
-    "path": "sprites/sprite2/sprite2.yy",
+    "name": "spr_interruptor",
+    "path": "sprites/spr_interruptor/spr_interruptor.yy",
   },
   "solid": false,
   "visible": true,

@@ -1,2 +1,2 @@
 draw_self();
-draw_rectangle(x,y,x+16,y+16,true);
+draw_rectangle(x,y,x+64,y+64,true);

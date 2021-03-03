@@ -6,8 +6,8 @@
   "solid": false,
   "visible": true,
   "spriteMaskId": {
-    "name": "sprite2",
-    "path": "sprites/sprite2/sprite2.yy",
+    "name": "spr_colision_jugador",
+    "path": "sprites/spr_colision_jugador/spr_colision_jugador.yy",
   },
   "persistent": false,
   "parentObjectId": null,

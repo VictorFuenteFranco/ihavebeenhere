@@ -7,7 +7,7 @@ function zombie_atacar() {
 
 	//Detectar subimagen de colisión
 	if(image_index == 8){
-		instance_create_layer(Player_man.x,Player_man.y,"Instances",obj_ataque_zombie);
+		instance_create_layer(Player_man.x,Player_man.y,"Player",obj_ataque_zombie);
 	}
 
 }
