@@ -1,12 +1,10 @@
-
 ///Colisiones con jugador
 //Si la hay colision y la puerta está cerrada
 if(colision){
 	if(open==false){
 	image_speed=1;
 	sprite_index = spr_puertas_open;
-	if(image_index==5){image_speed=0;open=true;image_index=6}
-	}
+	if(image_index==5){image_speed=0;open=true;image_index=6}}
 	//Si la hay colision y la puerta está abierta	
 	if(open==true){sprite_index=cr_none;}
 

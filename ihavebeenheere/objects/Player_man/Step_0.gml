@@ -32,6 +32,26 @@ if(place_meeting(x,y+vv,obj_pared)){
 	vv=0;
 }
 
+///Colisiones con puertas
+if(place_meeting(x+vh,y,obj_puertas)){
+	for(var i=0;i<abs(vh);i++){
+		if place_meeting(x+sign(vh),y,obj_puertas){
+			break;
+		} x += sign(vh);
+	
+	}
+	vh=0;
+}
+if(place_meeting(x,y+vv,obj_puertas)){
+	for(var i=0;i<abs(vv);i++){
+		if(place_meeting(x,y+sign(vv),obj_puertas)){
+			break;
+		}
+		y += sign(vv);
+	}
+	vv=0;
+}
+
 ///Colisiones contra ataques zombie
 repeat(instance_number(obj_ataque_zombie)){
 	ataque_z = instance_place(x,y,obj_ataque_zombie);

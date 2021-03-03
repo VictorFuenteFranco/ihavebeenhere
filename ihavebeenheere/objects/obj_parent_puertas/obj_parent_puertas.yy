@@ -1,16 +1,10 @@
 {
-  "spriteId": {
-    "name": "spr_puertas_idle",
-    "path": "sprites/spr_puertas_idle/spr_puertas_idle.yy",
-  },
+  "spriteId": null,
   "solid": false,
-  "visible": true,
+  "visible": false,
   "spriteMaskId": null,
   "persistent": false,
-  "parentObjectId": {
-    "name": "obj_parent_puertas",
-    "path": "objects/obj_parent_puertas/obj_parent_puertas.yy",
-  },
+  "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,
@@ -24,7 +18,7 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"parent":{"name":"obj_puertas","path":"objects/obj_puertas/obj_puertas.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,"parent":{"name":"obj_parent_puertas","path":"objects/obj_parent_puertas/obj_parent_puertas.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],
@@ -33,7 +27,7 @@
     "path": "folders/Objetos/Paredes.yy",
   },
   "resourceVersion": "1.0",
-  "name": "obj_puertas",
+  "name": "obj_parent_puertas",
   "tags": [],
   "resourceType": "GMObject",
 }
