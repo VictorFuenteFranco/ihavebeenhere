@@ -2,7 +2,7 @@
 randomize();
 dir = random(360);
 v = 0;
-radio_persecucion = 200;
+radio_persecucion = 300;
 radio_ataque = 55;
 perseguir = true;
 //vida zombie

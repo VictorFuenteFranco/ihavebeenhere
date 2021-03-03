@@ -1,0 +1,2 @@
+///Pantalla completa
+pFull=false;
